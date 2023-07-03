@@ -14,39 +14,39 @@
                     <div class="col-xl-6 offset-xl-3">
                         <h2>JQuery Calculator</h2>
                         <div class="card">
-                            <div class="cal-head">
+                            <div class="cal-head" id="display">
                                 <input type="text" id="headId" maxlength="10">
                             </div>
                             <div class="body-btn">
                                 <div>
-                                    <input type="button" value="C" class="btn btn-dark" onclick="clearResult()">
+                                    <input type="button" id="clear" value="C" class="btn btn-dark" onclick="clearResult()">
                                     <input type="button" value="+/-" class="btn btn-dark">
                                     <input type="button" value="%" class="btn btn-dark" onclick="insertNum('%')">
-                                    <input type="button" value="/" class="btn btn-dark" onclick="insertNum('/')">
+                                    <input type="button" id="divide" value="/" class="btn btn-dark" onclick="insertNum('/')">
                                 </div>
                                 <div>
-                                    <input type="button" value="7" class="btn btn-dark" onclick="insertNum(7)">
-                                    <input type="button" value="8" class="btn btn-dark" onclick="insertNum(8)">
-                                    <input type="button" value="9" class="btn btn-dark" onclick="insertNum(9)">
-                                    <input type="button" value="*" class="btn btn-info" onclick="insertNum('*')">
+                                    <input type="button" id="seven" value="7" class="btn btn-dark" onclick="insertNum(7)">
+                                    <input type="button" id="eight" value="8" class="btn btn-dark" onclick="insertNum(8)">
+                                    <input type="button" id="nine" value="9" class="btn btn-dark" onclick="insertNum(9)">
+                                    <input type="button" id="multiply" value="*" class="btn btn-info" onclick="insertNum('*')">
                                 </div>
                                 <div>
-                                    <input type="button" value="4" class="btn btn-dark" onclick="insertNum(4)">
-                                    <input type="button" value="5" class="btn btn-dark" onclick="insertNum(5)">
-                                    <input type="button" value="6" class="btn btn-dark" onclick="insertNum(6)">
-                                    <input type="button" value="-" class="btn btn-info" onclick="insertNum('-')">
+                                    <input type="button" id="four" value="4" class="btn btn-dark" onclick="insertNum(4)">
+                                    <input type="button" id="five" value="5" class="btn btn-dark" onclick="insertNum(5)">
+                                    <input type="button" id="six" value="6" class="btn btn-dark" onclick="insertNum(6)">
+                                    <input type="button" id="subtract" value="-" class="btn btn-info" onclick="insertNum('-')">
                                 </div>
                                 <div>
-                                    <input type="button" value="1" class="btn btn-dark" onclick="insertNum(1)">
-                                    <input type="button" value="2" class="btn btn-dark" onclick="insertNum(2)">
-                                    <input type="button" value="3" class="btn btn-dark" onclick="insertNum(3)">
-                                    <input type="button" value="+" class="btn btn-info" onclick="insertNum('+')">
+                                    <input type="button" id="one" value="1" class="btn btn-dark" onclick="insertNum(1)">
+                                    <input type="button" id="two" value="2" class="btn btn-dark" onclick="insertNum(2)">
+                                    <input type="button" id="three" value="3" class="btn btn-dark" onclick="insertNum(3)">
+                                    <input type="button" id="add" value="+" class="btn btn-info" onclick="insertNum('+')">
                                 </div>
                                 <div>
-                                    <input type="button" value="0" class="btn btn-dark" onclick="insertNum(0)">
-                                    <input type="button" value="." class="btn btn-dark" onclick="insertNum('.')">
+                                    <input type="button" id="zero" value="0" class="btn btn-dark" onclick="insertNum(0)">
+                                    <input type="button" id="decimal" value="." class="btn btn-dark" onclick="insertNum('.')">
                                     <input type="button" value="DEL" class="btn btn-dark" onclick="deleteNum()">
-                                    <input type="button" value="=" class="btn btn-info" onclick="calculate()">
+                                    <input type="button" id="equals" value="=" class="btn btn-info" onclick="calculate()">
                                 </div>
                             </div>
                         </div>
